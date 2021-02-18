@@ -62,10 +62,7 @@ class Pipeline:
 				print("Time: {}, Symbol: {}, Price: {}, Quantity: {}".format(timestamp, msg['s'], msg['p'], msg['q']))
 
 	"""
-		Processes messages received from api
-
-		Arguments
-			msg: message received
+		Start
 	"""
 	def run(self):
 		bm = BinanceSocketManager(self.client)
